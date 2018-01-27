@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Harry Potter Trailers</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/video.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav_menu').slicknav({
+				prependTo: "#mobile_menu"
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="bar">
+			<a href="index.html"><img class="logo" src="../images/logo.jpg" alt="Deathly Hallows Logo" height="110" /></a>
+			<div class="sitename">
+				Harry Potter!<br/> Wizarding World!
+			</div>
+		</div>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="page.html">Places</a>
+				<ul>
+					<li><a href="page.html">Hogwarts</a>
+						<ul>
+							<li><a href="page.html">Gryffindor</a></li>
+							<li><a href="page.html">Slytherin</a></li>
+							<li><a href="page.html">Hufflepuff</a></li>
+							<li><a href="page.html">Ravenclaw</a></li>
+						</ul>
+					</li>
+					<li><a href="page.html">Privet Drive</a></li>
+				</ul>
+			</li>
+			<li><a href="plot.html">Plot</a>
+				<ul>
+					<li><a href="page.html">Philosopher Stone</a></li>
+					<li><a href="page.html">Chambers Of Secret</a></li>
+					<li><a href="page.html">Prizoner Of Azkaban</a></li>
+					<li><a href="page.html">Goblet Of Fire</a></li>
+					<li><a href="page.html">Order Of Phoenix</a></li>
+					<li><a href="page.html">Half Blood Prince</a></li>
+					<li><a href="page.html">Deathly Hallows</a></li>
+					<li><a href="page.html">Cursed Child</a></li>
+				</ul>
+			</li>
+			<li><a href="videos.html" class="this">Trailers</a></li>
+			<li><a href="image.html"> Gallery</a></li>
+		</ul>
+	</nav>
+
+	<aside class="right">
+		<h2>Upcoming Movie Trailers see below- Fantastic Beasts 2</h2>
+
+		<iframe width="200" height="170" src="https://www.youtube.com/embed/IoM63lelYyI">
+				</iframe>
+
+		<p>Also check out fan fiction trailer for Voldemort Origins of the Heir.</p><br>
+
+		<iframe width="200" height="170" src="https://www.youtube.com/embed/mdOlsUBMLUI">
+				</iframe>
+
+	</aside>
+	<main>
+		<section>
+			<h1>Harry Potter Tribute</h1>
+			<article>
+				<h3>
+					By JK Rowling<br> Trailers on the right Area->
+				</h3>
+				<div class="video_border">
+					<figure>
+						<video id="vid" controls width="400" height="270" poster="../images/logo.jpg">
+					<source src="../media/harry_potter.mp4">
+					<track src="../media/sample.vtt" label="English" kind="captions" srclang="en-us" default >
+
+    				<object type="application/x-shockwave-flash" width="520" height="270">
+        				<param name="movie" value="../media/harry_potter.mp4" />
+        				<param name="wmode" value="transparent" />
+        				<param name="quality" value="high" />
+        				
+            				<object type="application/x-shockwave-flash"
+                    				data="../media/harry_potter.mp4"
+                    				width="520" height="270">
+                				<param name="wmode" value="transparent" />
+                				<param name="quality" value="high" />
+            				</object>
+        				
+    				</object>    
+					</video>
+						<figcaption>Tribute to Harry Potter- fan made Video</figcaption>
+					</figure>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<aside class="left">
+		<h2>Navigate Here</h2>
+		<h2>Go to Home Page
+			<br>
+			<a href="../index.html">Home
+                
+           
+                <img src="../images/favicon.ico" alt="Hogwarts pic"/>
+        	</a>
+		</h2>
+		<h2>Famous Spots
+			<br>
+			<a href="page.html">Places
+                
+             
+                <img src="../images/hogwarts.jpg" alt="Hogwarts pic"/>
+			</a>
+		</h2>
+		<h2>Summary
+			<br>
+			<a href="plot.html">Plot
+                
+
+                <img src="../images/plot.jpg" alt="Harry Potter Movie Pic"/>
+           	</a>
+		</h2>
+		<h2>Trailers
+			<br>
+			<a href="videos.html">Trailers
+                <img src="../images/trailer.jpg" alt="Harry Potter Movie Pic"/>
+            </a>
+		</h2>
+		<h2>Gallery of Images
+			<br>
+			<a href="image.html">Gallery
+                
+               <img src="../images/gal.jpg" alt="People posing with Butterbeer"/>
+            </a></h2>
+	</aside>
+
+	<footer>
+		<p>copyright &copy; Surbhi Zalpuri 2018</p>
+	</footer>
+</body>
+
+</html>

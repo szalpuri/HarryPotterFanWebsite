@@ -1,0 +1,345 @@
+/* default styles for the elements */
+
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: cursive;
+}
+
+body {
+	font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: darkviolet;
+	border-width: 1px;
+	background-color: Black;
+}
+
+a {
+	font-weight: bold;
+	color: hotpink;
+}
+
+/* the styles for the header */
+
+header img {
+
+	float: left;
+}
+
+/* the styles for header section*/
+
+header .bar .sitename {
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 3%;
+	color: white;
+}
+
+h1 {
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	color: white;
+	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section {
+	width: 58%;
+	float: right;
+	padding-right: 2.08%;
+	padding-left: 2.08%;
+	padding-bottom: 20px;
+}
+
+
+a:focus,
+a:hover {
+	font-style: italic;
+}
+
+main h2 {
+	font-size: 130%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+aside {
+	padding-right: 1%;
+	padding-left: 1.08%;
+	padding-bottom: 20px;
+}
+
+section p,
+aside p {
+	text-align: justify;
+}
+
+aside h2 {
+	font-size: 100%;
+	color: violet;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+aside h3 {
+	font-size: 100%;
+	padding-bottom: 0.25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+	width: 126px;
+	height: 100px;
+	border-style: double;
+	border-color: violet;
+	border-width: 2px;
+
+}
+
+.right {
+	float: right;
+	width: 20%;
+	padding-right: 2%;
+}
+
+/*styles for main*/
+
+main h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+	color: violet;
+
+}
+
+article {
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+
+main {
+	clear: left;
+}
+
+/* the styles for the footer */
+
+footer p {
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+em.shadow {
+	text-shadow: 2px 2px 4px #800000;
+}
+
+
+header {
+	background-color: black;
+}
+
+footer {
+	background-color: #7600A9;
+	clear: both;
+}
+
+
+main p {
+	padding-bottom: 0.5em;
+}
+
+main ul {
+	padding-bottom: 0.25em;
+	padding-left: 1.25em;
+}
+
+main li {
+	padding-bottom: 0.35em;
+}
+
+
+/* the styles for nav*/
+
+#nav_menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	border: solid 2px black;
+}
+
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+}
+
+#nav_menu ul li a {
+	display: block;
+	width: 192px;
+	text-align: center;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	background-color: #7600A9;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: gabriola;
+	font-size: 1.5em;
+}
+
+#nav_menu ul li a.this {
+	color: black;
+}
+
+#nav_menu {
+	position: relative;
+	border: 2px solid black;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	border: solid 2px black;
+}
+
+#nav_menu ul ul ul {
+	top: 0;
+	left: 100%;
+	border: solid 2px black;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section ul {
+	list-style-type: disc;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+
+/*the styles for article images*/
+
+article img {
+	width: 100%;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	text-align: center;
+
+}
+
+article ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+article ul li {
+	float: left;
+	width: 20%;
+	padding: 10%;
+	text-align: center;
+
+}
+
+figure {
+	height: 25%;
+	width: 85%;
+	padding: 2%;
+}
+
+figcaption {
+	color: white;
+}
+
+article ul li:hover {
+	width: 40%;
+	padding: 5%;
+	text-align: center;
+
+}
+
+
+@media only screen and (max-width: 959px) {
+	section,
+	h1 {
+		font-size: 135%;
+	}
+	section h2,
+	aside h2 {
+		font-size: 120%;
+	}
+}
+
+/* mobile landscape to tablet portrait */
+
+@media only screen and (max-width: 767px) {
+	section {
+		float: none;
+		width: 95%;
+	}
+
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: darkviolet!important;
+	}
+	aside {
+		display: none;
+	}
+	header img {
+		float: none;
+		padding-left: 6%;
+	}
+	article ul li {
+		float: none;
+		width: 20%;
+		text-align: center;
+
+	}
+	article ul li:hover {
+		width: 80%;
+		text-align: center;
+
+	}
+}
+
+
+@media only screen and (max-width: 959px) {}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+}
